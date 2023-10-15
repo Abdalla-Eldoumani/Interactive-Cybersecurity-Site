@@ -1,13 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1e1e1e;
+    color: #33ff33;
     margin: 0;
     padding: 0;
 }
 
 header {
     background-color: #333;
-    color: #ffffff;
+    color: #33ff33;
     padding: 10px 0;
     text-align: center;
 }
@@ -15,12 +16,12 @@ header {
 nav {
     display: flex;
     justify-content: space-around;
-    background-color: #555;
+    background-color: #252525;
     padding: 10px 0;
 }
 
 nav a {
-    color: white;
+    color: #33ff33;
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
@@ -28,22 +29,24 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #777;
+    background-color: #1e1e1e;
+    border: 1px solid #33ff33;
 }
 
 main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #252525;
+    box-shadow: 0 0 10px #33ff33;
+    border: 1px solid #33ff33;
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
     background-color: #333;
-    color: #ffffff;
+    color: #33ff33;
     position: absolute;
     bottom: 0;
     width: 100%;
