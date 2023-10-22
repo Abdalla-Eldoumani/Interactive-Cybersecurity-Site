@@ -46,6 +46,19 @@ main {
     border: 1px solid #33ff33;
 }
 
+main ul li a {
+    color: #33ff33;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+main ul li a:hover, main ul li a:focus {
+    text-decoration: underline;
+    text-decoration-color: #00FFFF;
+}
+
 footer {
     text-align: center;
     padding: 10px 0;
