@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Lectures/Topics/Cryptography/(Polyalphabetic-Ciphers)/styles.css">
+    <link rel="shortcut icon" href="/images/image.png" type="image/x-icon">
+    <title>Lesson 3: Polyalphabetic Ciphers</title>
+</head>
+<body>
+    <header>
+        <h1>Lesson 3: Polyalphabetic Ciphers</h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/Lectures/topics.html">Lectures</a>
+        <a href="#">Challenges</a>
+        <a href="/About/about.html">About</a>
+    </nav>
+
+    <div class="back-to-cryptography">
+        <a href="/Lectures/Topics/Cryptography/cryptography.html">&larr; Back to Cryptography Lectures</a>
+    </div>
+
+    <main>
+        <article>
+            <h2>Advancing to Polyalphabetic Ciphers</h2>
+            <p><strong>Evolution from Monoalphabetic:</strong> Polyalphabetic ciphers represent an evolution in cryptographic techniques, addressing some vulnerabilities of monoalphabetic ciphers.</p>
+            <p><strong>Multiple Alphabets:</strong> Instead of using a single substitution alphabet, polyalphabetic ciphers use multiple alphabets for encryption, greatly increasing the complexity and security.</p>
+            <p><strong>Key Concept:</strong> The key in polyalphabetic ciphers often consists of a word or phrase. The length and choice of this key are critical for ensuring the cipher's security.</p>
+            
+            <h3>The Vigenère Cipher: A Classic Example</h3>
+            <p><strong>Introduction:</strong> Developed in the 16th century, the Vigenère Cipher is one of the most famous polyalphabetic ciphers.</p>
+            <p><strong>The Vigenère Table:</strong> It employs a tabula recta or Vigenère table, a grid of alphabets each shifted one letter to the left from the one above it.</p>
+            <p><strong>Keyword Relevance:</strong> The keyword chosen repeats itself to match the length of the plaintext. Each letter of the keyword indicates which row of the Vigenère table is used for each letter of the plaintext.</p>
+            
+            <h2>Key Generation in Vigenère Cipher</h2>
+            <p><strong>Choosing a Keyword:</strong> The strength of the cipher depends heavily on the keyword. Longer, non-repeating keywords are preferable.</p>
+            <p><strong>Keyword Length:</strong> If the keyword is shorter than the message, it repeats itself until it matches the message length.</p>
+            
+            <h2>Encrypting with the Vigenère Cipher</h2>
+            <p><strong>Alignment of Keyword and Plaintext:</strong> The keyword is written above the plaintext, aligning each letter of the keyword with a letter of the plaintext.</p>
+            <p><strong>Using the Vigenère Table:</strong> For each letter of the plaintext, you find the intersection of the row (defined by the keyword letter) and the column (defined by the plaintext letter) in the Vigenère table to get the encrypted letter.</p>
+            <p><strong>Example:</strong> If the plaintext is "HELLO" and the keyword is "KEY", the encrypted message could be "RIJVS".</p>
+            
+            <h2>Decrypting with the Vigenère Cipher</h2>
+            <p><strong>Reversing the Process:</strong> Decryption involves a similar process but in reverse, using the Vigenère table to find the plaintext letter from the ciphertext and the keyword.</p>
+            <p><strong>Keyword Necessity:</strong> The correct decryption requires knowledge of the keyword and access to the Vigenère table.</p>
+            
+            <h2>Strengths and Weaknesses</h2>
+            <p><strong>Enhanced Security:</strong> The use of multiple alphabets in the Vigenère Cipher makes it less susceptible to simple frequency analysis, a significant step up from monoalphabetic ciphers.</p>
+            <p><strong>Vulnerabilities:</strong> However, it's not unbreakable. If the keyword is short or has a pattern, cryptanalysts can use advanced techniques like Kasiski examination or frequency analysis of each letter in relation to the keyword length to break the cipher.</p>
+        </article>
+
+        <section class="video-tutorials">
+            <h2>Video Tutorials</h2>
+            
+            <div class="video-wrapper">
+                <h3>Vigenere Cipher Simple Tutorial</h3>
+                <iframe src="https://www.youtube.com/embed/SkJcmCaHqS0" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        
+            <div class="video-wrapper">
+                <h3>Vigenere Cipher Simple Guide</h3>
+                <iframe src="https://www.youtube.com/embed/rccRQcyKB5g" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        
+            <div class="video-wrapper">
+                <h3>How To Write In Vigenère Cipher</h3>
+                <iframe src="https://www.youtube.com/embed/UuREH8tJjv4" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>        
+    </main>
+
+    <footer>
+        Copyright © 2023 Interactive Cybersecurity Site
+    </footer>
+
+</body>
+</html>

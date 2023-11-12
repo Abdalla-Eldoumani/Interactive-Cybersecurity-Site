@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Lectures/Topics/Cryptography/(Monoalphabetic-Substitution-Cipher)/styles.css">
+    <link rel="shortcut icon" href="/images/image.png" type="image/x-icon">
+    <title>Lesson 2: Monoalphabetic Substitution Cipher</title>
+</head>
+<body>
+    <header>
+        <h1>Lesson 2: Monoalphabetic Substitution Cipher</h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/Lectures/topics.html">Lectures</a>
+        <a href="#">Challenges</a>
+        <a href="/About/about.html">About</a>
+    </nav>
+
+    <div class="back-to-cryptography">
+        <a href="/Lectures/Topics/Cryptography/cryptography.html">&larr; Back to Cryptography Lectures</a>
+    </div>
+
+    <main>
+        <article>
+            <h2>Introduction to Substitution Ciphers</h2>
+            <p><strong>Definition:</strong> A substitution cipher is a method of encryption where each letter in the plaintext is replaced by a letter some fixed number of positions down or up the alphabet. Unlike the Caesar Cipher, which shifts letters in a uniform manner, a Monoalphabetic Substitution Cipher changes each letter to a different, specific letter.</p>
+            <p><strong>Key Concept:</strong> The 'key' in this context is the method of substitution, typically represented by a scrambled version of the alphabet. Each letter in the plaintext corresponds to a unique letter in this scrambled alphabet.</p>
+            
+            <h2>Creating the Cipher Alphabet</h2>
+            <p><strong>Designing the Key:</strong> To create the cipher alphabet, one must randomly shuffle the 26 letters of the standard alphabet. This shuffled order represents the core of the cipher's encryption mechanism.</p>
+            <p><strong>Example of a Cipher Alphabet:</strong> If the original alphabet is ABCDEFGHIJKLMNOPQRSTUVWXYZ, a simple shuffled cipher alphabet could be QWERTYUIOPASDFGHJKLZXCVBNM.</p>
+            <p><strong>Uniqueness:</strong> Each letter in the plaintext has a unique, predetermined substitute in this cipher alphabet, making it a monoalphabetic cipher.</p>
+            
+            <h2>Process of Encryption</h2>
+            <p><strong>Substitution Mechanism:</strong> To encrypt a message, you refer to your cipher alphabet. Each letter in your plaintext is substituted with its corresponding letter in the cipher alphabet.</p>
+            <p><strong>Example:</strong> Using our sample cipher alphabet, the plaintext "HELLO" would be encrypted as "ITSSG".</p>
+            <p><strong>Consistency:</strong> The same plaintext letter is always replaced with the same cipher alphabet letter throughout the message.</p>
+            
+            <h2>Process of Decryption</h2>
+            <p><strong>Reversing the Encryption:</strong> To decrypt the message, the process is reversed. The recipient of the message, who must know the cipher alphabet, substitutes each letter in the ciphertext with its corresponding letter in the plaintext alphabet.</p>
+            <p><strong>Decryption Example:</strong> To decrypt "ITSSG" back to "HELLO", the recipient would replace 'I' with 'H', 'T' with 'E', 'S' with 'L', and so on.</p>
+            
+            <h2>Vulnerability to Frequency Analysis</h2>
+            <p><strong>Language Patterns:</strong> Despite the complexity of the cipher alphabet, the monoalphabetic substitution cipher does not alter the frequency of letters. For example, if 'E' is the most common letter in English, the most frequent letter in the ciphertext likely represents 'E'.</p>
+            <p><strong>Breaking the Cipher:</strong> A cryptanalyst can use these frequency patterns to guess the substitutions. By analyzing the frequency of letters and comparing it with typical letter frequencies in the language, one can start to deduce the cipher alphabet.</p>
+            <p><strong>Example of Frequency Analysis:</strong> If 'Q' is the most common letter in the ciphertext and the most common letter in English is 'E', one might guess that 'Q' represents 'E' in the cipher alphabet.</p>
+        </article>
+
+        <section class="video-tutorials">
+            <h2>Video Tutorials</h2>
+            
+            <div class="video-wrapper">
+                <h3>Monoalphabetic substitution:</h3>
+                <iframe src="https://www.youtube.com/embed/Dz1RW_W2zGI" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        
+            <div class="video-wrapper">
+                <h3>Break a Simple Monoalphabetic Substitution Cipher:</h3>
+                <iframe src="https://www.youtube.com/embed/kf5JbXdwiyE" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Copyright © 2023 Interactive Cybersecurity Site
+    </footer>
+
+</body>
+</html>

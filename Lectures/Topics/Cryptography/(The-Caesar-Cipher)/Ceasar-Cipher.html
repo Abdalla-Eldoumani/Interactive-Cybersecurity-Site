@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Lectures/Topics/Cryptography/(The-Caesar-Cipher)/styles.css">
+    <link rel="shortcut icon" href="/images/image.png" type="image/x-icon">
+    <title>Lesson 1: The Caesar Cipher</title>
+</head>
+<body>
+    <header>
+        <h1>Lesson 1: The Caesar Cipher</h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/Lectures/topics.html">Lectures</a>
+        <a href="#">Challenges</a>
+        <a href="/About/about.html">About</a>
+    </nav>
+
+    <div class="back-to-cryptography">
+        <a href="/Lectures/Topics/Cryptography/cryptography.html">&larr; Back to Cryptography Lectures</a>
+    </div>
+
+    <main>
+        <article>
+            <h2>What Is the Caesar Cipher?</h2>
+            <p><strong>Origin and Naming:</strong> The cipher is named after Julius Caesar, who used it to communicate with his generals during times of war.</p>
+            <p><strong>Basic Principle:</strong> It belongs to a class of ciphers known as substitution ciphers, where each letter in the plaintext is replaced by a letter some fixed number of positions down or up the alphabet.</p>
+            <p><strong>Historical Significance:</strong> Although simple, the Caesar Cipher represents one of the earliest and most famous examples of encryption and highlights the beginnings of cryptographic history.</p>
+            
+            <h2>Understanding the Shift</h2>
+            <p><strong>Alphabetical Rotation:</strong> Visualize the alphabet as a loop, where after 'Z', it circles back to 'A'.</p>
+            <p><strong>Key as a Fixed Value:</strong> The key in the Caesar Cipher is the number of positions each letter of the plaintext is shifted. If the key is 3, 'A' becomes 'D', 'B' becomes 'E', and so on until 'Z' becomes 'C'.</p>
+            <p><strong>Key Symmetry:</strong> The same key is used for both encrypting and decrypting messages, classifying it as a type of symmetric-key algorithm.</p>
+
+            <h2>Encrypting with the Caesar Cipher</h2>
+            <p><strong>Choosing a Shift Key:</strong> The key can be any number from 1 to 25 since a shift of 0 would leave the text unchanged and therefore not encrypted.</p>
+            <p><strong>Encryption Process:</strong> Each letter in the plaintext is replaced by a letter located a fixed number of positions away in the alphabet. For example, with a shift of 3, the entire plaintext "ATTACKATDAWN" becomes "DWWDFNDWGDZQ".</p>
+            <p><strong>Case Sensitivity:</strong> Traditionally, the Caesar Cipher is not case-sensitive, treating both 'a' and 'A' as the same letter for the purpose of encryption.</p>
+            
+            <h2>Decrypting with the Caesar Cipher</h2>
+            <p><strong>Reverse Operation:</strong> Decrypting is the inverse operation of encrypting, requiring the message recipient to shift the ciphertext letters in the opposite direction by the same shift key.</p>
+            <p><strong>Recovery of Plaintext:</strong> Using the previous example with a shift of 3, the ciphertext "DWWDFNDWGDZQ" is transformed back into the original message "ATTACKATDAWN".</p>
+            
+            <h2>Limitations of the Caesar Cipher</h2>
+            <p><strong>Finite Keys:</strong> With only 25 possible shifts (excluding 0), the strength of the cipher is limited, as all possible keys can be easily and quickly tested.</p>
+            <p><strong>Susceptibility to Frequency Analysis:</strong> The pattern of letters in a language tends to be consistent. For instance, 'E' is the most used letter in English. A cipher that doesn't disguise these frequencies can be broken by analyzing the frequency of occurring letters in the ciphertext.</p>
+        </article>
+
+        <section class="video-tutorials">
+            <h2>Video Tutorials</h2>
+            
+            <div class="video-wrapper">
+                <h3>The Caesar cipher | Journey into cryptography | Khan Academy</h3>
+                <iframe src="https://www.youtube.com/embed/sMOZf4GN3oc" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        
+            <div class="video-wrapper">
+                <h3>Caesar Cipher Tutorial</h3>
+                <iframe src="https://www.youtube.com/embed/ZKcv1IfrS7A" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-wrapper">
+                <h3>Caesar Cipher in Python - A Simple Guide:</h3>
+                <iframe src="https://www.youtube.com/embed/kP5N_5fVXXY" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Copyright © 2023 Interactive Cybersecurity Site
+    </footer>
+
+</body>
+</html>

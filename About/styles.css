@@ -46,6 +46,10 @@ main {
     border: 1px solid #33ff33;
 }
 
+main h2{
+    text-align: center;
+}
+
 main ul li a {
     color: #33ff33;
     text-decoration: none;
