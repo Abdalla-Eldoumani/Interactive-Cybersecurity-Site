@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Lectures/Topics/Hashing/(Basics-of-Hashing)/styles.css">
+    <link rel="shortcut icon" href="/images/image.png" type="image/x-icon">
+    <title>Lesson 1: Basics Of Hashing</title>
+</head>
+<body>
+    <header>
+        <h1>Lesson 1: Basics Of Hashing</h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/Lectures/topics.html">Lectures</a>
+        <a href="#">Challenges</a>
+        <a href="/About/about.html">About</a>
+    </nav>
+
+    <div class="back-to-hashing">
+        <a href="/Lectures/Topics/Hashing/hashing.html">&larr; Back to Hashing Lectures</a>
+    </div>
+
+    <main>
+        <article>
+            <h2>Lesson 1: Basics of Hashing</h2>
+            <h3>Objective</h3>
+            <p>To introduce students to the concept of hashing, explaining how it transforms data into a fixed-size string of characters and its importance in digital security.</p>
+    
+            <h3>What is Hashing?</h3>
+            <p><strong>Explanation:</strong> Hashing is a process that takes any form of data (like text from a sentence, numbers, or files) and converts it into a fixed-size string of characters, which seems random. This process is done through a hash function.</p>
+            <p><strong>Analogy:</strong> Think of hashing as creating a unique ID for any piece of information. For instance, if you have a recipe for a cake, hashing would be like assigning a unique code to that recipe. No matter how many times you use the same recipe, you will always get the same unique code.</p>
+    
+            <h3>Simple Hash Functions Examples</h3>
+            <p><strong>Basic Concept:</strong> A hash function is a special algorithm that takes your input data and produces a hash. For example, let's say we have a simple hash function that takes a word and gives us a number. The word "cat" might be turned into the number 3 (because there are three letters). The word "hello" might become 5.</p>
+    
+            <h3>Basic Properties of Hash Functions</h3>
+            <p><strong>Consistency:</strong> This means that if you put the same input into your hash function, you will always get the same output. For instance, every time we put "cat" into our simple hash function, we always get the number 3.</p>
+            <p><strong>Speed:</strong> Hash functions work very quickly, producing a hash almost instantly. This is important because it allows systems to use hashes for many data pieces without causing delays.</p>
+            <p><strong>Unpredictability:</strong> A small change in the input data should cause a significant change in the output hash. If we change "cat" to "cap", the hash should be significantly different. This property is crucial for security purposes.</p>
+            <p><strong>Uniqueness:</strong> Ideally, each unique input should produce a unique hash. In our simple example, every different word should have a different number. However, in real-world hash functions, sometimes two different inputs might produce the same hash (known as a collision), but this is rare with good hash functions.</p>
+    
+            <h3>Why Hashing Matters</h3>
+            <p><strong>Password Security:</strong> When you create a password on a website, the website doesn't store your actual password. Instead, it stores the hash of your password. When you log in, the website hashes the password you enter and checks if it matches the stored hash. This means if someone accesses the stored passwords, they only see the hashes, not the actual passwords.</p>
+            <p><strong>Data Integrity:</strong> Hashing is also used to check data integrity. For example, when downloading a file, you can hash the downloaded file and compare it to the hash provided by the source. If the hashes match, the file has not been tampered with during the download.</p>
+        </article>
+        <section class="video-tutorials">
+            <h2>Video Tutorials</h2>
+            
+            <div class="video-wrapper">
+                <h3>What is Hashing? Hash Functions Explained Simply</h3>
+                <iframe src="https://www.youtube.com/embed/2BldESGZKB8" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        
+            <div class="video-wrapper">
+                <h3>Hash Function in Cryptography | Properties of Hash Function | Simple Hash Function Tutorial</h3>
+                <iframe src="https://www.youtube.com/embed/oWRzvf2K6Q8" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        
+            <div class="video-wrapper">
+                <h3>Lecture 1: Introduction of Hashing | Hash Function</h3>
+                <iframe src="https://www.youtube.com/embed/cXeN0Nr6qcE" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>      
+    </main>
+
+    <footer>
+       Copyright © 2023 Interactive Cybersecurity Site
+    </footer>
+
+</body>
+</html>
+        

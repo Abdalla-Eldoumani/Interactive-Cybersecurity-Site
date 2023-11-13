@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Lectures/Topics/Hashing/(Hashing-in-Everyday-Use)/styles.css">
+    <link rel="shortcut icon" href="/images/image.png" type="image/x-icon">
+    <title>Lesson 2: Hashing in Everyday Use</title>
+</head>
+<body>
+    <header>
+        <h1>Lesson 2: Hashing in Everyday Use</h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/Lectures/topics.html">Lectures</a>
+        <a href="#">Challenges</a>
+        <a href="/About/about.html">About</a>
+    </nav>
+
+    <div class="back-to-hashing">
+        <a href="/Lectures/Topics/Hashing/hashing.html">&larr; Back to Hashing Lectures</a>
+    </div>
+
+    <main>
+        <article>
+            <h2>Lesson 2: Hashing in Everyday Use</h2>
+            <h3>Objective</h3>
+            <p>Explore the practical applications of hashing in everyday digital life, focusing on password security, understanding hash collisions, and the role of hashing in blockchain technology.</p>
+
+            <h3>Storing Passwords Securely</h3>
+            <p><strong>How It Works:</strong> When you create a password on a website, the site doesn't actually save your exact password. Instead, it uses hashing to turn your password into a unique string of characters, a hash. For example, "Blue123" might become something like "81d3fa9a...".</p>
+            <p><strong>Importance for Security:</strong> If someone unauthorized accesses the website's password data, they will only see these hashes, not the real passwords. This makes it harder for them to steal your password.</p>
+            <p><strong>The Concept of Salting:</strong> Salting is a technique where a random piece of data, called a 'salt', is added to the password before it's hashed. So, "Blue123" might first become "Blue123xyz" before being hashed. This step ensures even common passwords end up with unique hashes, enhancing security.</p>
+
+            <h3>Understanding Hash Collisions</h3>
+            <p><strong>What is a Collision:</strong> A hash collision happens when two different pieces of data (like two different passwords) end up with the same hash. It's like two different recipes giving you the same dish.</p>
+            <p><strong>Why Collisions Matter:</strong> Collisions are important because they can potentially be exploited to breach data security. However, modern hash functions are designed to make collisions extremely rare, maintaining the integrity of the hashing process.</p>
+
+            <h3>Hashing in the Blockchain</h3>
+            <p><strong>Blockchain Basics:</strong> A blockchain is like a digital ledger made up of blocks. Each block contains data and the hash of the previous block.</p>
+            <p><strong>Hashing's Role:</strong> The hash acts like a seal. If the data in a block changes, the hash changes too. This change would be noticeable in the next block, as it stores the hash of the previous block. This chaining of blocks through hashes is what makes blockchains secure and tamper evident.</p>
+            <p><strong>Real-World Example:</strong> In cryptocurrencies like Bitcoin, this use of hashing helps ensure that once a transaction is recorded in a blockchain, it cannot be altered without altering all subsequent blocks, which is practically impossible.</p>
+        </article>
+
+        <section class="video-tutorials">
+            <h2>Video Tutorials</h2>
+            
+            <div class="video-wrapper">
+                <h3>Practical Applications of Hashing</h3>
+                <iframe src="https://www.youtube.com/embed/jmtzX-NPFDc" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        
+            <div class="video-wrapper">
+                <h3>Password Security and Hashing</h3>
+                <iframe src="https://www.youtube.com/embed/PpjClUyRxZs" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-wrapper">
+                <h3>Hashing in Blockchain Technology</h3>
+                <iframe src="https://www.youtube.com/embed/BvnwiG3LLMI" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>      
+    </main>
+
+    <footer>
+       Copyright © 2023 Interactive Cybersecurity Site
+    </footer>
+</body>
+</html>
+

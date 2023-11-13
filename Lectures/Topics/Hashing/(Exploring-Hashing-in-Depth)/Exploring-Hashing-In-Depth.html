@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Lectures/Topics/Hashing/(Exploring-Hashing-in-Depth)/styles.css">
+    <link rel="shortcut icon" href="/images/image.png" type="image/x-icon">
+    <title>Lesson 3: Exploring Hashing in Depth</title>
+</head>
+<body>
+    <header>
+        <h1>Lesson 3: Exploring Hashing in Depth</h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/Lectures/topics.html">Lectures</a>
+        <a href="#">Challenges</a>
+        <a href="/About/about.html">About</a>
+    </nav>
+
+    <div class="back-to-hashing">
+        <a href="/Lectures/Topics/Hashing/hashing.html">&larr; Back to Hashing Lectures</a>
+    </div>
+
+    <main>
+        <article>
+            <h2>Lesson 3: Exploring Hashing in Depth</h2>
+            <h3>Objective</h3>
+            <p>Delve into the diverse applications and challenges of hashing in various technological domains, providing a comprehensive understanding of its impact and significance.</p>
+
+            <h3>Hashing Beyond Passwords</h3>
+            <p><strong>Diverse Uses of Hashing:</strong> Hashing is not limited to password security. It's also pivotal in digital signatures, data integrity, and unique identifiers for indexing.</p>
+            <p><strong>Digital Signatures Explained:</strong> When you send an email with a digital signature, the email's content is hashed, and this hash is then encrypted with your private key. The recipient can decrypt the hash using your public key and compare it to the hash they generate from the received email. If the hashes match, it confirms the email's authenticity and integrity.</p>
+
+            <h3>Challenges in Hashing</h3>
+            <p><strong>Facing Brute Force Attacks:</strong> While hashing is secure, it's not immune to brute force attacks, where attackers try every possible combination to revert a hash back to its original data.</p>
+            <p><strong>Solution with Adaptive Hash Functions:</strong> To counteract this, adaptive hash functions like bcrypt are used. They are designed to be slow, making brute force attacks time-consuming and impractical. Bcrypt, for instance, takes a significant amount of time to generate a hash, which can be adjusted as computational power increases.</p>
+
+            <h3>Hashing in Data Storage and Retrieval</h3>
+            <p><strong>Efficiency in Databases:</strong> In databases, hashing is crucial for indexing. Hash tables use hashes of data as unique identifiers, allowing for quick data retrieval.</p>
+            <p><strong>Managing Large File Systems:</strong> Large storage systems utilize hashing to manage files efficiently. They hash files to create unique identifiers, ensuring quick retrieval and avoiding duplicate storage. For instance, a system might use hashes to check if a file already exists, preventing unnecessary duplications.</p>
+
+            <h3>Hashing in Network Security</h3>
+            <p><strong>Securing Network Communications:</strong> Hashing is a cornerstone in network security. VPNs and SSL/TLS protocols (which secure your browsing) rely on hashing to ensure data integrity.</p>
+            <p><strong>Ensuring Data Integrity:</strong> When data is transmitted over a network, it's hashed at the source. The recipient then hashes the received data and compares the two hashes. If they match, it confirms the data was transmitted without alterations, ensuring what was sent is exactly what was received.</p>
+        </article>
+        <section class="video-tutorials">
+            <h2>Video Tutorials</h2>
+            
+            <div class="video-wrapper">
+                <h3>Applications of Hashing</h3>
+                <iframe src="https://www.youtube.com/embed/gQAUzPexIBs" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        
+            <div class="video-wrapper">
+                <h3>Hashing Algorithm Tutorial</h3>
+                <iframe src="https://www.youtube.com/embed/A71q0HE3RZw" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-wrapper">
+                <h3>Hashing in Network Security</h3>
+                <iframe src="https://www.youtube.com/embed/w7Lhn9O7y8Q" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>      
+    </main>
+    
+        <footer>
+           Copyright © 2023 Interactive Cybersecurity Site
+        </footer>
+    
+</body>
+</html>
