@@ -1,0 +1,129 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1e1e1e;
+    color: #33ff33;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #33ff33;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #252525;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #33ff33;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #1e1e1e;
+    border: 1px solid #33ff33;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #252525;
+    box-shadow: 0 0 10px #33ff33;
+    border: 1px solid #33ff33;
+}
+
+main h2{
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #33ff33;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #333;
+    border: 1px solid #33ff33;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.grid-item h3 {
+    margin: 10px 0;
+}
+
+.grid-item a {
+    color: #33ff33;
+    text-decoration: none; 
+    font-weight: bold; 
+    margin: 10px 0;
+}
+
+.grid-item:hover {
+    background-color: #1e1e1e; 
+}
+
+.grid-item:hover a {
+    text-decoration: underline; 
+}
+
+.separate {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.grid-separate {
+    background-color: #333;
+    border: 1px solid #33ff33;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.grid-separate a {
+    color: #33ff33;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.grid-separate:hover {
+    background-color: #1e1e1e;
+}
+
+.grid-separate:hover a {
+    text-decoration: underline;
+}
