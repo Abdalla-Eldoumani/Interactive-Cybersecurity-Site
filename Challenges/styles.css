@@ -4,6 +4,9 @@ body {
     color: #33ff33;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -52,14 +55,19 @@ footer {
     background-color: #333;
     color: #33ff33;
     width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
     padding: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-item {
@@ -72,6 +80,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-bottom: 20px;
 }
 
 .grid-item a {
@@ -150,4 +159,33 @@ footer {
 
 .grid-separate:hover a {
     text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .grid-item {
+        margin-bottom: 0;
+    }
+
+    footer {
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .grid-item {
+        padding: 10px;
+    }
+    
+    footer {
+        padding: 20px 0;
+    }
 }
