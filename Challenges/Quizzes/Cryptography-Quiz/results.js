@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         highlightIncorrectAnswers(results);
     } else {
         alert('No results to display. Please take the quiz first.');
-        window.location.href = '/Challenges/Quizzes/Cryptography-Quiz/Cquiz.html';
+        window.location.href = 'Cquiz.html';
     }
 
     localStorage.removeItem('quizResults');

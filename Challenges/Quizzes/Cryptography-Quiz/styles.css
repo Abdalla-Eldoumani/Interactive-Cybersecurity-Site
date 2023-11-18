@@ -175,4 +175,25 @@ main a{
     border: 1px solid #33ff33;
     padding: 10px;
     margin-bottom: 10px;
-}  
+}
+
+.score {
+    background-color: #333;
+    color: #33ff33;
+    border: 1px solid #33ff33;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.retake {
+    background-color: #333;
+    color: #33ff33;
+    border: 1px solid #33ff33;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.retake:hover {
+    background-color: #1e1e1e;
+}
