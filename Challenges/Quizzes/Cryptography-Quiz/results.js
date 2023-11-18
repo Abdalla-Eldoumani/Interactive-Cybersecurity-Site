@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (results) {
         displayResults(results);
-        highlightIncorrectAnswers(results);
     } else {
         alert('No results to display. Please take the quiz first.');
         window.location.href = 'Cquiz.html';
@@ -33,13 +32,4 @@ function displayResults(results) {
             }
         });
     }
-}
-
-function highlightIncorrectAnswers(results) {
-    const questionElements = document.querySelectorAll('#results .question');
-    questionElements.forEach((element, index) => {
-        if (!results.questions[index].correct) {
-            element.classList.add('incorrect');
-        }
-    });
 }
