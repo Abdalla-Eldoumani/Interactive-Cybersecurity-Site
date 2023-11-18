@@ -380,7 +380,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
             }
         }
 
-        localStorage.setItem('quizResults', JSON.stringify({ score, wrongAnswers }));
+        const detailedResults = randomQuestions.map((question, index) => ({
+            question: question.question,
+            userAnswer: questionElements[index].querySelector('input:checked') ? questionElements[index].querySelector('input:checked').value : 'No answer',
+            correctAnswer: question.answer,
+            correct: !wrongAnswers.includes(index)
+        }));
+    
+        localStorage.setItem('quizResults', JSON.stringify({ score, detailedResults }));
         window.location.href = 'results.html';
     }
 

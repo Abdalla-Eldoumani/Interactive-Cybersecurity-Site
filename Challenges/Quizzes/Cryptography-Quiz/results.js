@@ -20,24 +20,17 @@ function displayResults(results) {
 
     const resultsElement = document.getElementById('results');
     if (resultsElement) {
-        results.wrongAnswers.forEach(questionIndex => {
-            const question = results.questions[questionIndex];
-            const questionElement = document.createElement('div');
-            questionElement.classList.add('question');
-
-            const questionText = document.createElement('p');
-            questionText.innerText = question.question;
-            questionElement.appendChild(questionText);
-
-            const userAnswer = document.createElement('p');
-            userAnswer.innerText = `Your answer: ${question.userAnswer}`;
-            questionElement.appendChild(userAnswer);
-
-            const correctAnswer = document.createElement('p');
-            correctAnswer.innerText = `Correct answer: ${question.correctAnswer}`;
-            questionElement.appendChild(correctAnswer);
-
-            resultsElement.appendChild(questionElement);
+        results.detailedResults.forEach((result, index) => {
+            if (!result.correct) {
+                const questionElement = document.createElement('div');
+                questionElement.classList.add('question', 'incorrect');
+                questionElement.innerHTML = `
+                    <p>${index + 1}. ${result.question}</p>
+                    <p>Your answer: ${result.userAnswer}</p>
+                    <p>Correct answer: ${result.correctAnswer}</p>
+                `;
+                resultsElement.appendChild(questionElement);
+            }
         });
     }
 }
