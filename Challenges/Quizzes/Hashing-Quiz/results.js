@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         displayResults(results);
     } else {
         alert('No results to display. Please take the quiz first.');
-        window.location.href = 'Cquiz.html';
+        window.location.href = 'Hquiz.html';
     }
 
     localStorage.removeItem('quizResults');
