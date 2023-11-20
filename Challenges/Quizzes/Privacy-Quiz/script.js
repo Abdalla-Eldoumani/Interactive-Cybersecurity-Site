@@ -155,8 +155,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             options: ["True", "False"],
             answer: "False"
         },
-
-        
         {
             question: "Unwanted data collection is solely about information you type into forms.",
             options: ["True", "False"],
@@ -207,7 +205,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             options: ["True", "False"],
             answer: "False"
         },
-     
         {
             question: "What is a passphrase?",
             options: ["A sequence of numbers", "A sequence of words or a sentence", "A combination of symbols and letters", "Your birthdate"],
@@ -276,7 +273,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             options: ["True", "False"],
             answer: "False"
         },
-      
         {
             question: "What is an analogy given for data encryption?",
             options: ["Sending a postcard", "Sending a letter without an envelope", "Sending a letter written in a code that only the intended recipient can understand", "Sending a letter with a tracking device"],
@@ -292,9 +288,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             options: ["To make login processes faster", "To add an extra layer of security", "To replace passwords", "To track user behavior"],
             answer: "To add an extra layer of security"
         },
-
-        
-        
         {
             question: "Why is it important to consider the impact on your job prospects or personal relationships before posting online?",
             options: [
@@ -330,14 +323,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             ],
             answer: "It indicates a secure, encrypted connection"
         },
-        
     ];
-
-    
-
-
-        
-
 
     let randomQuestions = [];
 
