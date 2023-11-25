@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Quiz</title>
-    <link rel="stylesheet" href="/Challenges/Quizzes/Privacy-Quiz/styles.css">
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="/Challenges/Quizzes/ZComprehensive-Quiz/styles.css">
     <link rel="shortcut icon" href="/images/image.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>Privacy Quiz</h1>
+        <h1>Quiz Results</h1>
     </header>
 
     <nav>
@@ -24,20 +24,16 @@
     </div>
 
     <main>
-        <form id="quiz-form">
-            <div id="quiz-container">
-            </div>
-            <button type="submit" id="submit-quiz">Submit Quiz</button>
-            <div id="result-container">
-            </div>
-        </form>
-    </main>
-    <footer>
-        <div class="footer-content">
-            Copyright © 2023 Interactive Cybersecurity Site
+        <div class="score" id="score"></div>
+        <div class="results" id="results"></div>
+        <div class="retake">
+        <a href="/Challenges/Quizzes/ZComprehensive-Quiz/ZCquiz.html">Retake Quiz</a>
         </div>
+    </main>
+    
+    <footer>
+        Copyright © 2023 Interactive Cybersecurity Site
     </footer>
-    <script type="module" src="script.js"></script>
-    <script type="module" src="questions.js"></script>
+    <script src="results.js"></script>
 </body>
 </html>

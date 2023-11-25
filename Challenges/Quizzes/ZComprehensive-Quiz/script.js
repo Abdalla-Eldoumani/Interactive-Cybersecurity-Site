@@ -5,21 +5,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     function getRandomQuestions(arr, num) {
         let tempArray = [...arr];
-        let randomQuestions = []; 
+        let randomQuestions = [];
     
-        for (let i = tempArray.length - 1; i > 0; i--) { 
+        for (let i = tempArray.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [tempArray[i], tempArray[j]] = [tempArray[j], tempArray[i]];
         }
     
-        randomQuestions = tempArray.slice(0, num); 
+        randomQuestions = tempArray.slice(0, num);
         
         return randomQuestions;
     } 
 
     function loadQuestions() {
         const quizContainer = document.getElementById('quiz-container');
-        randomQuestions = getRandomQuestions(questions, 20);
+        randomQuestions = getRandomQuestions(questions, 80);
         quizContainer.innerHTML = '';
         randomQuestions.forEach((question, index) => {
             const questionElement = document.createElement('div');
