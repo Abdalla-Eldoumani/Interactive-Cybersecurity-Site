@@ -51,9 +51,11 @@ footer {
     padding: 10px 0;
     background-color: #333;
     color: #33ff33;
-    position: absolute;
-    bottom: 0;
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .grid-container {
