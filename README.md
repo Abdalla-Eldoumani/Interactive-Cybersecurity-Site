@@ -1,4 +1,4 @@
-# Interactive Cybersecurity Site: Comprehensive Overview
+# Interactive Cybersecurity Site: Overview
 
 ## Project Overview
 >The Interactive Cybersecurity Site is an educational platform designed to enhance cybersecurity knowledge through interactive learning. It targets a wide audience, including students, professionals, and anyone interested in understanding cybersecurity concepts. The project combines theoretical lectures with practical quizzes, offering a holistic learning experience.
