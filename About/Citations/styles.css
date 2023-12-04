@@ -63,10 +63,6 @@ main ul li a:hover, main ul li a:focus {
     text-decoration-color: #00FFFF;
 }
 
-h3 + p a {
-    color: #33ff33; 
-}
-
 footer {
     text-align: center;
     padding: 10px 0;
