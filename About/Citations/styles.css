@@ -62,6 +62,25 @@ main ul li a:hover, main ul li a:focus {
     text-decoration: underline;
     text-decoration-color: #00FFFF;
 }
+.back-to-about {
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.back-to-about a {
+    color: #33ff33;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #252525;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.back-to-about a:hover {
+    color: #ffffff;
+    background-color: #1e1e1e;
+}
 
 footer {
     text-align: center;
