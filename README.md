@@ -28,4 +28,4 @@
 >The website is developed using HTML, CSS, and JavaScript, ensuring a responsive and engaging user interface. It's structured to facilitate easy navigation across different topics and interactive elements.
 
 ## Conclusion
->The Interactive Cybersecurity Site stands out as a comprehensive educational resource in cybersecurity. Its blend of theoretical lectures and practical quizzes caters to a diverse audience, making it an invaluable tool for anyone looking to deepen their understanding of cybersecurity
+>The Interactive Cybersecurity Site stands out as a comprehensive educational resource in cybersecurity. Its blend of theoretical lectures and practical quizzes caters to a diverse audience, making it an invaluable tool for anyone looking to deepen their understanding of cybersecurity.
